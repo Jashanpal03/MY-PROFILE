@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url(image/back.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    li {
+        list-style: none;
+
+    }
+
+    .list {
+        display: flex;
+        gap: 20px;
+
+    }
+
+    .pages {
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .pages:hover {
+        color: #2edb17;
+        text-decoration: underline;
+        transition: 0.3s;
+    }
+
+    .name {
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        margin-left: 20px;
+    }
+
+    .name span {
+        color: #8cff3f;
+    }
+
+    .Hire {
+        background: none;
+
+
+
+        border: solid 1px #39a52b;
+
+        border: 1px solid #8cff3f;
+        padding: 12px 30px;
+        border-radius: 12px;
+        color: #8cff3f;
+        transition: 0.3s;
+    }
+
+    .Hire:hover {
+        background: #8cff3f;
+        color: #000;
+    }
+
+    .container {
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 690px;
+        background-position: center;
+        margin-top: -25px;
+
+        display: flex;
+
+
+
+    }
+
+    .butimg {
+        transform: rotate(251deg);
+    }
+
+    .Myimage {
+        color: #ffffff;
+        width: 50%;
+    }
+
+    .Myimage img {
+        width: 500px;
+        border-radius: 89px;
+        margin-top: 71px;
+        margin-left: 56px;
+        transform: rotate(360deg);
+
+    }
+
+    a {
+        text-decoration: none;
+        color: #ffffff;
+
+    }
+
+    .Intro {
+        width: 50%;
+        color: #ffffff;
+        margin-left: 76px;
+        margin-top: 20px;
+
+    }
+
+    .Intro h1 span {
+        color: #8cff3f;
+    }
+
+    .head5 {
+
+        width: 100%;
+        height: 35px;
+        background: transparent;
+        border: 1px solid white;
+        border-radius: 30px;
+        padding: 0 10px;
+        /* right side gap kam */
+        box-sizing: border-box;
+        outline: none;
+        color: white;
+
+    }
+
+    button {
+        padding: 10px;
+        border-radius: 11px;
+        border: none;
+    }
+
+    .button1 {
+        background-color: #6fff09;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .button1:hover {
+        color: #ffffff;
+        background-color: #1e2b39;
+    }
+
+    .button2 {
+        background: none;
+        border: solid 1px #6fff09;
+        font-family: 'Poppins', sans-serif;
+        color: #ffffff;
+        transition: 0.5s;
+    }
+
+    .button2:hover {
+        background-color: #2edb17;
+        color: #070505;
+    }
+
+    .button2 img {
+        background-color: #6fff09;
+    }
+
+    .icon img {
+        width: 50px;
+
+    }
+
+    .icon h3 img {
+        width: 15px;
+    }
+
+    .allicon {
+        display: flex;
+        gap: 20px;
+
+    }
+
+    .icon {
+        background: #09121d;
+        padding: 6px;
+        border-radius: 15px;
+        border: 1px solid #1e2b39;
+        text-align: center;
+        margin-top: 62px;
+        transition: 0.3s;
+    }
+
+    .icon h3,
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+    }
+
+    .badge {
+        display: inline-block;
+        padding: 10px 18px;
+        border-radius: 30px;
+        background: #101822;
+        border: 1px solid #263340;
+        margin-bottom: 30px;
+        font-size: 14px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .mainname {
+        font-size: 61px;
+        font-family: 'Poppins', sans-serif;
+        line-height: 10px
+    }
+
+    .right-content {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    /* .main-circle {
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        border: 3px solid #95ff00;
+        position: relative;
+        box-shadow: 0 0 20px 0px #95ff00, 0 0 80px rgba(149, 255, 0, 0.4), inset 0 0 60px rgba(149, 255, 0, 0.3);
+        margin-top: 82px;
+    } */
+
+
+
+    .main-circle img {
+        width: 100%;
+        max-width: 500px;
+        z-index: -1;
+        border-radius: 10px;
+        margin-top: 92px;
+        margin-left: 27px;
+    }
+
+    .image-box {
+        position: relative;
+        width: 521px;
+        height: 594px;
+        border-radius: 50%;
+        overflow: hidden;
+        z-index: 2;
+        background: radial-gradient(circle, rgba(98, 255, 0, 0.45) 0%, rgba(0, 0, 0, 0.2) 70%, transparent 100%);
+        margin-top: 28px;
+        margin-left: 24px;
+    }
+
+    .social-bar {
+        position: fixed;
+        width: 66px;
+        padding: 7px 0;
+        background: #0f1720;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        overflow: hidden;
+        right: 74px;
+    }
+
+
+    .time {
+        margin: 0px;
+    }
+
+    .icon-box {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        background: #1b2530;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 15px;
+        cursor: pointer;
+        transition: 0.3s;
+        z-index: 2;
+        gap: 10px;
+    }
+
+    .slider {
+        display: flex;
+    }
+
+    .icon-box:hover {
+        transform: scale(1.1);
+        background: #263545;
+    }
+
+    .program {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .scalable {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .creating {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .cards {
+        display: flex;
+        margin-top: 20px;
+        gap: 10px;
+
+    }
+
+    .text {
+        text-align: end;
+        font-family: cursive;
+        color: #6fff09;
+
+    }
+
+    .skills-wrapper {
+        display: flex;
+
+        width: 84%;
+        margin: 0;
+        padding: 25px 44px;
+        border-radius: 25px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 77px;
+    }
+
+    .skill1,
+    .skill2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+
+    .card {
+        font-family: 'Poppins', sans-serif;
+
+        border-radius: 25px;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, .08);
+        text-align: center;
+        transition: .4s;
+        backdrop-filter: blur(10px);
+        padding: 17px;
+        margin-bottom: 45px;
+        width: 132px;
+    }
+
+    .card:hover {
+
+        border-color: rgba(126, 241, 40, 0.3);
+        transform: translateY(-5px);
+
+    }
+
+    .fa-html5:before {
+        content: "\f13b";
+        color: #E34F26;
+    }
+
+    .fa-brands fa-wordpress {
+        width: 50px;
+    }
+
+    .social-sidebar {
+        position: fixed;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        background-color: #0d1115;
+        border-radius: 20px;
+
+
+    }
+
+    .social-sidebar a {
+        color: var(--text-gray);
+        font-size: 1.2rem;
+        background: var(--card-bg);
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 1px solid transparent;
+        transition: 0.3s;
+    }
+
+
+
+
+
+    .fa-briefcase:before {
+        content: "\f0b1";
+        font-size: 1.8rem;
+        color: #7ef128;
+    }
+
+    .fa-rocket:before {
+        content: "\f135";
+        font-size: 1.8rem;
+        color: #7ef128;
+    }
+
+    .fa-face-smile:before,
+    .fa-smile:before {
+        content: "\f118";
+        font-size: 1.8rem;
+        color: #7ef128;
+    }
+
+    .fa-star:before {
+        content: "\f005";
+        font-size: 1.8rem;
+        color: #7ef128;
+    }
+
+    .fa-css3-alt:before {
+        content: "\f13b";
+        color: #1572b1;
+    }
+
+    .fa-bootstrap:before {
+        content: "\f836";
+        color: #7952b3;
+    }
+
+    .fa-js:before {
+        content: "\f3b8";
+        color: #f7df1e;
+    }
+
+    .fa-wordpress:before {
+        content: "\f19a";
+        color: #21759B;
+    }
+
+    .fa-instagram:before {
+        content: "\f16d";
+        color: #a0aab2;
+    }
+
+    .fa-twitter:before {
+        content: "\f099";
+        color: #a0aab2;
+    }
+
+    .fa-facebook:before {
+        content: "\f16d";
+        color: #a0aab2;
+    }
+
+    .fa-dribbble:before {
+        content: "\f17d";
+        color: #a0aab2;
+    }
+
+    .fa-github:before {
+        content: "\f09b ";
+        color: #a0aab2;
+    }
+
+    .fa-linkedin-in:before {
+        content: "\f0e1";
+        color: #a0aab2;
+        border-radius: 50px;
+    }
+
+    .exp {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .rate {
+        display: flex;
+        gap: 10px;
+    }
+
+    .warn {
+        display: flex;
+        gap: 10px;
+    }
+
+    #check {
+        display: none;
+    }
+
+    #close {
+        display: none;
+    }
+
+    .icons {
+        display: none;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+
+    /* =========================
+RESPONSIVE CSS
+========================= */
+
+    /* Laptop */
+    @media (max-width:1200px) {
+
+        .container {
+            padding: 20px;
+            gap: 30px;
+        }
+
+        .mainname {
+            font-size: 50px;
+            line-height: 60px;
+        }
+
+        .skills-wrapper {
+            width: 90%;
+        }
+
+        .image-box img {
+            width: 500px;
+        }
+
+        .rate {
+            display: flex;
+            gap: 30px;
+        }
+
+        .warn {
+            display: flex;
+            gap: 30px;
+        }
+    }
+
+
+    /* Tablet */
+    @media (max-width:992px) {
+
+        .navbar {
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .list {
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+        }
+
+        .container {
+            flex-direction: column-reverse;
+            height: auto;
+            padding: 30px 20px;
+            margin-top: -290px;
+        }
+
+        .Intro {
+            width: 100%;
+            margin: 0;
+            text-align: center;
+        }
+
+        .mainname {
+            font-size: 45px;
+            line-height: 55px;
+        }
+
+        .creating {
+            font-size: 15px;
+            line-height: 28px;
+        }
+
+        .view {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+
+        }
+
+        .cards {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skills-wrapper {
+            width: 100%;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .main-circle {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .image-box img {
+            width: 500px;
+        }
+
+        .social-sidebar {
+            left: 10px;
+            gap: 15px;
+            padding: 10px 5px;
+        }
+
+        .rate {
+            display: flex;
+            gap: 30px;
+        }
+
+        .warn {
+            display: flex;
+            gap: 30px;
+        }
+
+    }
+
+
+    /* Mobile */
+    @media (max-width:768px) {
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .Hire {
+            display: none;
+        }
+
+        .navbar {
+            padding: 15px;
+            position: relative;
+        }
+
+        #close {
+            display: none;
+        }
+
+        .name {
+            margin-left: 0;
+            font-size: 26px;
+        }
+
+        .icons {
+            display: block;
+        }
+
+        .list {
+            position: absolute;
+
+            top: 80px;
+            left: 0;
+
+            width: 100%;
+
+            background: #111827;
+
+            flex-direction: column;
+
+            text-align: center;
+
+            max-height: 0;
+
+            overflow: hidden;
+
+            transition: 0.4s ease;
+        }
+
+        .list li {
+            padding: 15px 0;
+        }
+
+        #check:checked~.list {
+            max-height: 400px;
+        }
+
+        #check:checked~.icons #menu {
+            display: none;
+
+
+
+        }
+
+        #check:checked~.icons #close {
+            display: block;
+        }
+
+        .pages {
+            font-size: 14px;
+        }
+
+        .Hire {
+            padding: 10px 22px;
+            font-size: 14px;
+        }
+
+        .container {
+            padding: 20px 15px;
+        }
+
+        .badge {
+            font-size: 13px;
+        }
+
+        .mainname {
+            font-size: 38px;
+            line-height: 50px;
+        }
+
+        .scalable {
+            font-size: 22px;
+            line-height: 35px;
+        }
+
+        .creating {
+            font-size: 14px;
+            line-height: 26px;
+        }
+
+        .button1,
+        .button2 {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .cards {
+            gap: 15px;
+            margin-left: 40px;
+        }
+
+        .card {
+            width: 42%;
+            padding: 50px;
+        }
+
+        .skills-wrapper {
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 15px;
+            height: 320px;
+        }
+
+        .skill {
+            width: 40%;
+        }
+
+        .image-box img {
+            width: 280px;
+
+        }
+    }
+
+    /*  
+        .text h2 {
+            font-size: 24px;
+        }
+
+        .text p {
+            font-size: 14px;
+        }
+
+        .social-sidebar {
+            position: fixed;
+            bottom: 15px;
+            top: auto;
+            left: 50%;
+            transform: translateX(-50%);
+            flex-direction: row;
+            padding: 10px 15px;
+            border-radius: 50px;
+            z-index: 999;
+        }
+
+        .rate {
+            display: flex;
+            gap: 30px;
+        }
+
+        .warn {
+            display: flex;
+            gap: 30px;
+        }
+
+    }
+
+    
+    /* Small Mobile */
+    @media (max-width:480px) {
+
+        .mainname {
+            font-size: 30px;
+            line-height: 42px;
+        }
+
+        .scalable {
+            font-size: 18px;
+            line-height: 30px;
+        }
+
+        .rate {
+            display: flex;
+            gap: 30px;
+        }
+
+        .warn {
+            display: flex;
+            gap: 30px;
+        }
+
+        .creating {
+            font-size: 13px;
+        }
+
+        .card {
+            width: 100%;
+        }
+
+        .skill {
+            width: 100%;
+        }
+
+        .image-box img {
+            width: 500px;
+        }
+
+        .social-sidebar a {
+            width: 35px;
+            height: 35px;
+            font-size: 14px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+    }
+</style>
+
+<body>
+    <header class="head">
+        <nav class="navbar">
+            <h1 class="name"> <span>&lt;/&gt;</span>Jashan Pal</h1>
+            <input type="checkbox" id="check">
+            <label for="check" class="icons">
+
+                <i class="fa-solid fa-bars" id="menu"></i>
+
+                <i class="fa-solid fa-xmark" id="close"></i>
+
+            </label>
+            <ul class="list">
+                <li class="pages"><a href="#">Home</a></li>
+                <li class="pages"><a href="#">About us</a></li>
+                <li class="pages"><a href="#">Projects</a></li>
+                <li class="pages"><a href="#">Blog</a></li>
+                <li class="pages"><a href="#">Contact us</a></li>
+
+            </ul>
+            <button class="Hire" type="">Hire Me <img src="image/arrow-down-solid.png" width="20px" class="butimg"
+                    alt="">
+
+
+            </button>
+
+        </nav>
+
+    </header>
+    <div class="social-sidebar">
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <div class="container">
+        <div class="Intro">
+            <div class="h112">
+                <div class="badge">
+                    🟢 Available for new projects
+                </div>
+
+            </div>
+            <h1 class="mainname">Hi, I'm <span>Jashan Pal</span></h1>
+            <h2 class="scalable">Building scalable websites, eCommerce stores <span>&</span> digital experiences.</h2>
+            <p class="creating">I am a creative website designer skilled in HTML, CSS, Bootstrap, JavaScript, and
+                responsive design,
+                creating modern, user-friendly, visually appealing websites focused on performance, functionality, and
+                excellent user experience for businesses and clients.</p>
+            <div class="view">
+                <button class="button1" type="submit">View Projects <img src="image/circle-arrow-right-solid.png"
+                        width="17px" alt=""></button>
+                <button class="button2" type="submit">Download CV <img src="image/download-solid.png"
+                        width="17px"></button>
+            </div>
+
+
+
+            <div class="cards">
+                <!-- <div class="social-bar">
+                    <div class="icon-box">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+                    <div class="icon-box">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+
+                    <div class="icon-box">
+                        <i class="fa-brands fa-dribbble"></i>
+                    </div>
+
+                    <div class="icon-box">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div> -->
+
+                <div class="rate">
+                    <div class="card">
+                        <div class=" stat-box">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <h2 class="time">6<span>+</span></h2>
+                        <p> Months Experience</p>
+                    </div>
+
+                    <div class="card">
+                        <div class=" stat-box">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <h2 class="time">20<span>+</span></h2>
+                        <p>Projects Delivered</p>
+                    </div>
+                </div>
+
+                <div class="warn">
+                    <div class="card">
+                        <div class=" stat-box">
+                            <i class="fa-regular fa-face-smile"></i>
+                        </div>
+                        <h2 class="time">20<span>+</span></h2>
+                        <p>Happy Clients</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="stat-box">
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h2 class="time">5<span>★</span></h2>
+                        <p>Client Rating</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Skills -->
+            <div class="skills">
+
+                <div class="skills-wrapper">
+
+                    <div class="skill1">
+                        <div class="skill">
+                            <i class="fa-brands fa-html5 html" style="font-size: 50px;"></i>
+                            <h3 class="exp">HTML</h3>
+                        </div>
+
+                        <div class="skill">
+                            <i class="fa-brands fa-css3-alt css" style="font-size: 50px;"></i>
+                            <h3 class="exp">CSS</h3>
+                        </div>
+                    </div>
+
+                    <div class="skill2">
+                        <div class="skill">
+                            <i class="fa-brands fa-bootstrap bootstrap" style="font-size: 50px;"></i>
+                            <h3 class="exp">Bootstrap</h3>
+                        </div>
+
+                        <div class="skill">
+                            <i class="fa-brands fa-js js" style="font-size: 50px;"></i>
+                            <h3 class="exp">JavaScript</h3>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <i class="fa-brands fa-wordpress wordpress" style="font-size: 50px;"></i>
+                        <h3 class="exp">WordPress</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- HTML -->
+
+        <div class="main-circle">
+
+            <!-- OUTER GLOW -->
+            <div class="outer-circle"></div>
+
+            <!-- IMAGE -->
+            <div class="image-box">
+                <img src="image/jashanpal.png" alt="">
+            </div>
+
+            <!-- SMALL TOP CIRCLE -->
+            <div class="small-circle"></div>
+
+            <!-- NAME -->
+            <div class="text">
+                <h2>Jashan Pal</h2>
+                <p>Web Designer</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+
+</html>
