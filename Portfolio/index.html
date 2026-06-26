@@ -541,6 +541,12 @@
         cursor: pointer;
     }
 
+    .menuimg {
+        width: 20px;
+    }
+
+
+
     /* =========================
 RESPONSIVE CSS
 ========================= */
@@ -665,6 +671,16 @@ RESPONSIVE CSS
             gap: 30px;
         }
 
+        #bar {
+            position: fixed;
+            left: -300px;
+            width: 300px;
+            background-color: #0d1115;
+        }
+
+        .menubarr {
+            left: 0 !important;
+        }
     }
 
 
@@ -679,10 +695,27 @@ RESPONSIVE CSS
             display: none;
         }
 
+        .menuimg {
+            width: 48px;
+            margin-left: 158px;
+        }
+
         .navbar {
             padding: 15px;
             position: relative;
         }
+
+        .main-circle img {
+            width: 100%;
+            max-width: 437px;
+            z-index: -1;
+            border-radius: 10px;
+            margin-top: 164px;
+            margin-left: 27px;
+        }
+
+
+
 
         #close {
             display: none;
@@ -698,24 +731,17 @@ RESPONSIVE CSS
         }
 
         .list {
-            position: absolute;
-
-            top: 80px;
-            left: 0;
-
-            width: 100%;
-
-            background: #111827;
-
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100vh;
+            background: #0d1115;
+            display: flex;
             flex-direction: column;
-
-            text-align: center;
-
-            max-height: 0;
-
-            overflow: hidden;
-
-            transition: 0.4s ease;
+            padding-top: 80px;
+            transition: 0.3s ease;
+            z-index: 999;
         }
 
         .list li {
@@ -800,6 +826,40 @@ RESPONSIVE CSS
             width: 280px;
 
         }
+
+        .addmenubutton {
+            display: block;
+            background: none;
+            border: none;
+            cursor: pointer;
+            z-index: 200;
+            width: 100px;
+        }
+
+        #bar {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100vh;
+            background: #000000c2;
+            flex-direction: column;
+            padding-top: 80px;
+            transition: 0.3s;
+        }
+
+        .menubarr {
+            left: 0;
+        }
+
+        .tag {
+            text-decoration: none;
+            color: #ffffff;
+            font-family: 'FontAwesome';
+            font-size: 31px;
+            padding-left: 18px; 
+
+        }
     }
 
     /*  
@@ -834,7 +894,6 @@ RESPONSIVE CSS
         }
 
     }
-
     
     /* Small Mobile */
     @media (max-width:480px) {
@@ -891,33 +950,86 @@ RESPONSIVE CSS
             max-width: 100%;
             display: block;
         }
+
+        .addmenubutton {
+            display: block;
+            background: none;
+            border: none;
+            cursor: pointer;
+            z-index: 200;
+            width: 100px;
+        }
+
+        #bar {
+            position: fixed;
+            top: 0;
+            left: -300px;
+            width: 300px;
+            height: 100vh;
+            background: #000000c2;
+            flex-direction: column;
+            padding-top: 80px;
+            transition: 0.4s;
+            z-index: 999;
+        }
+
+        .menubarr {
+            left: 0 !important;
+        }
+
+    }
+    .cursor {
+        width: 10px;
+        height: 10px;
+        background: #00ff99;
+        border-radius: 50%;
+        position: fixed;
+        pointer-events: none;
+        z-index: 99999;
+        transform: translate(-50%, -50%);
+    }
+
+    .cursor-ring {
+        width: 40px;
+        height: 40px;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+        position: fixed;
+        pointer-events: none;
+        z-index: 99998;
+        transform: translate(-50%, -50%);
+        transition: transform .2s ease;
+    }
+
+    body {
+        cursor: none !important;
     }
 </style>
 
 <body>
+     <div class='cursor'></div>
+    <div class='cursor-ring'></div>
     <header class="head">
         <nav class="navbar">
             <h1 class="name"> <span>&lt;/&gt;</span>Jashan Pal</h1>
-            <input type="checkbox" id="check">
-            <label for="check" class="icons">
 
-                <i class="fa-solid fa-bars" id="menu"></i>
-
-                <i class="fa-solid fa-xmark" id="close"></i>
 
             </label>
-            <ul class="list">
-                <li class="pages"><a href="#">Home</a></li>
-                <li class="pages"><a href="#">About us</a></li>
-                <li class="pages"><a href="#">Projects</a></li>
-                <li class="pages"><a href="#">Blog</a></li>
-                <li class="pages"><a href="#">Contact us</a></li>
+            <ul class="list" id="bar">
+                <li class="pages"><a class="tag" href="#">Home</a></li>
+                <li class="pages"><a class="tag" href="#">About us</a></li>
+                <li class="pages"><a class="tag" href="project.html">Projects</a></li>
+                <li class="pages"><a class="tag" href="#">Blog</a></li>
+                <li class="pages"><a class="tag" href="#">Contact us</a></li>
 
             </ul>
-            <button class="Hire" type="">Hire Me <img src="image/arrow-down-solid.png" width="20px" class="butimg"
-                    alt="">
+            <button class="Hire">
+                Hire Me
+                <img src="image/arrow-down-solid.png" width="20px" class="butimg" alt="">
+            </button>
 
-
+            <button class="addmenubutton" onclick="addmenu()">
+                <img class="menuimg" src="image/menu.png" alt="">
             </button>
 
         </nav>
@@ -945,7 +1057,7 @@ RESPONSIVE CSS
                 creating modern, user-friendly, visually appealing websites focused on performance, functionality, and
                 excellent user experience for businesses and clients.</p>
             <div class="view">
-                <button class="button1" type="submit">View Projects <img src="image/circle-arrow-right-solid.png"
+                <button class="button1" type="submit">View Projects <link rel="stylesheet" href="project.html"> <img src="image/circle-arrow-right-solid.png"
                         width="17px" alt=""></button>
                 <button class="button2" type="submit">Download CV <img src="image/download-solid.png"
                         width="17px"></button>
@@ -1029,7 +1141,7 @@ RESPONSIVE CSS
 
                     <div class="skill2">
                         <div class="skill">
-                            <i class="fa-brands fa-bootstrap bootstrap" style="font-size: 50px;"></i>
+                            <i class="fa-brands fa-bootstrap bootstrap" style="font-size: 50px; "></i>
                             <h3 class="exp">Bootstrap</h3>
                         </div>
 
@@ -1073,7 +1185,37 @@ RESPONSIVE CSS
         </div>
     </div>
 
-</body>
+    <script src="index.js"></script>
+        <script>
+        const cursor = document.querySelector('.cursor');
+        const ring = document.querySelector('.cursor-ring');
+        let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
 
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            cursor.style.left = mouseX + 'px';
+            cursor.style.top = mouseY + 'px';
+        });
+
+        function animateCursor() {
+            ringX += (mouseX - ringX) * 0.15;
+            ringY += (mouseY - ringY) * 0.15;
+            ring.style.left = ringX + 'px';
+            ring.style.top = ringY + 'px';
+            requestAnimationFrame(animateCursor);
+        }
+        animateCursor();
+
+        document.querySelectorAll('a,button').forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                ring.style.transform = 'translate(-50%,-50%) scale(1.8)';
+            });
+            el.addEventListener('mouseleave', () => {
+                ring.style.transform = 'translate(-50%,-50%) scale(1)';
+            });
+        });
+    </script>
+</body>
 
 </html>
